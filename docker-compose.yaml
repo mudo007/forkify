@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  infra:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      ssh:
+        - default
+    image: diogoandrade/js-course:test
+    secrets:
+      - github-ssh-key
+    container_name: js-course
+    ports:
+      - '8080:1234'
+    expose:
+      - 8080
+    volumes:
+      - ${PWD}:/app
+    tty: true
+    entrypoint: ['/bin/bash']
+secrets:
+  github-ssh-key:
+    file: ${HOME}/.ssh/id_ed25519
