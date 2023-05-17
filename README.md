@@ -1,4 +1,4 @@
-# Final project for the "Complete Javascript Course: From Hero to Expert"
+# Final project for the "Complete Javascript Course: From Zero to Expert"
 
 This code was forked from https://github.com/jonasschmedtmann/complete-javascript-course/tree/updates-and-fixes, using the starter files of the project. After following the course content, this project will be refactored with Tests and SEO optimization.
 
